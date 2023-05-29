@@ -2,8 +2,6 @@
 
 \subsection{线性筛}
 
-欧拉函数不会，所以没写。
-
 \inputminted{cpp}{icpc/math/prime/prime.cpp}
 
 \subsection{高斯消元}
@@ -53,16 +51,20 @@
 
 不会 barrett 取模优化。
 
-\subsubsection{固定模数}
+\subsection{固定模数}
 
 \inputminted{cpp}{icpc/math/modint/static_modint.cpp}
-
-\subsubsection{动态模数}
-
-把固定模数改改就行：
-
-\inputminted{diff}{icpc/math/modint/diff}
 
 \subsection{矩阵类}
 
 \inputminted{cpp}{icpc/math/matrix/matrix.cpp}
+
+\subsection{扩展欧拉定理}
+
+\[
+    a^b \equiv \begin{cases}
+        a^{b \bmod \varphi\left(m\right)},                &\gcd\left(a,m\right) =  1,                   \\
+        a^b,                                   &\gcd\left(a,m\right)\ne 1, b <   \varphi\left(m\right), \\
+        a^{\left(b \bmod \varphi\left(m\right)\right) + \varphi\left(m\right)}, &\gcd\left(a,m\right)\ne 1, b \ge \varphi\left(m\right).
+      \end{cases} \pmod m
+\]

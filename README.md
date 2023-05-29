@@ -21,4 +21,4 @@ ICPC 模板
 - [x] 李超线段树
 - [ ] Manacher 算法
 - [ ] 后缀数组
-- [ ] Codeforces 上的防卡哈希
+- [x] Codeforces 上的防卡哈希
