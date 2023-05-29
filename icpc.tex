@@ -8,6 +8,28 @@
 \usepackage{minted}
 \setminted{breaklines, breakanywhere, linenos}
 
+\usepackage{relsize}
+
+\setminted[cpp]
+{
+    style=xcode,
+    mathescape,
+    linenos,
+    autogobble,
+    baselinestretch=0.8,
+    tabsize=4,
+    fontsize=\normalsize,
+    %bgcolor=Gray,
+    numbersep=1mm,
+    breaklines=true,
+    breaksymbolsepleft=2pt,
+    %breaksymbolleft=\raisebox{0.8ex}{ \small\reflectbox{\carriagereturn}}, %not moe!
+    %breaksymbolright=\small\carriagereturn,
+    breakbytoken=false,
+    showtabs=true,
+    tab={\relscale{0.6} $\big\vert \ \ \ $ \relscale{1}},
+}
+
 \usepackage{hyperref}
 
 \usepackage{amsmath}
