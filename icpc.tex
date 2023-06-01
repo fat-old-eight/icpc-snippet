@@ -1,4 +1,4 @@
-\documentclass{article}
+\documentclass[sigconf, nonacm, timestamp, balance=false,manuscript]{acmart}
 
 \usepackage{ctex}
 
@@ -10,13 +10,20 @@
 
 \usepackage{relsize}
 
+\usepackage{graphicx}
+
+\usepackage{oz}
+
+\makeatletter
+\let\ACM@origbaselinestretch\baselinestretch
+\makeatother
+
 \setminted[cpp]
 {
     style=xcode,
     mathescape,
     linenos,
     autogobble,
-    baselinestretch=0.8,
     tabsize=4,
     fontsize=\normalsize,
     %bgcolor=Gray,
@@ -34,17 +41,25 @@
 
 \usepackage{amsmath}
 
-\title{ICPC 模板暨军训打发时间解决方案}
-\author{earthmessenger及FatOldEight}
-\date{癸卯四月初十}
+\title{ICPC 使用例暨军训打发时间解决方案}
+\author{earthmessenger \& FatOldEight}
+\date{癸卯四月十四}
 
 \begin{document}
+
+\begin{teaserfigure}
+    \includegraphics[width=\textwidth]{fa6f4vdw.png}
+    \caption{来自甘孜州的选手丁真和iiDX。}
+\end{teaserfigure}
 \maketitle
+
+% \includegraphics[scale=0.6]{fa6f4vdw.png}
 
 \clearpage
 
 \tableofcontents
 
 \input{icpc/icpc.tex}
+\input{other/other.tex}
 
 \end{document}

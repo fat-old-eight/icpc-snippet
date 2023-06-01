@@ -64,6 +64,6 @@ struct mat
 
     int* operator[](int x)
     {
-		return a[x];
-	}
+        return a[x];
+    }
 };
